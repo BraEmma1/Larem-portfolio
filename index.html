@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style2.css" />
+    <script src="./script1.js" defer></script>
+
+
+    <title>Emmanuel Lartey - Portfolio</title>
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <div class="logo">Emmanuel Lartey</div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="search-bar">
+          <input type="text" placeholder="Search" />
+          <button>Search</button>
+        </div>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>I'm <span>Emmanuel Lartey</span></h1>
+          <h3>Backed Developer</h3>
+          <button>Contact Me</button>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://picsum.photos/400/300 " alt="Emmanuel Lartey" />
+        </div>
+      </section>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+        dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+        ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+        quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+        Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras
+        dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+        tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+        enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+        Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+        imperdiet. Etiam ultricies nisi vel augue.
+      </p>
+    </section>
+    <section id="skills">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-item"><i class="fab fa-html5"></i> HTML & CSS</div>
+        <div class="skill-item"><i class="fab fa-node-js"></i> Express JS</div>
+        <div class="skill-item"><i class="fab fa-wordpress"></i> WordPress</div>
+        <div class="skill-item"><i class="fas fa-database"></i> MongoDB</div>
+        <div class="skill-item"><i class="fab fa-js"></i> JavaScript</div>
+        <div class="skill-item">
+          <i class="fab fa-git-alt"></i> Git Source Control
+        </div>
+        <div class="skill-item">
+          <i class="fas fa-search"></i> Search Engine Optimization
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item visible">
+          <a href="https://github.com/yourusername/project1" target="_blank">
+            <img src="https://picsum.photos/250/250" alt="Project 1 Image">
+            <h3>Project 1</h3>
+          </a>
+          <p>A brief description of Project 1. This project involves...</p>
+          <a href="https://github.com/yourusername/project1" target="_blank" class="github-link">View on GitHub</a>
+        </div>
+        <div class="portfolio-item visible">
+          <a href="https://github.com/yourusername/project2" target="_blank">
+            <img src="https://picsum.photos/250/250" alt="Project 2 Image">
+            <h3>Project 2</h3>
+          </a>
+          <p>A brief description of Project 2. This project is designed to...</p>
+          <a href="https://github.com/yourusername/project2" target="_blank" class="github-link">View on GitHub</a>
+        </div>
+        <div class="portfolio-item visible">
+          <a href="https://github.com/yourusername/project3" target="_blank">
+            <img src="https://picsum.photos/250/250" alt="Project 3 Image">
+            <h3>Project 3</h3>
+          </a>
+          <p>A brief description of Project 3. Features include...</p>
+          <a href="https://github.com/yourusername/project3" target="_blank" class="github-link">View on GitHub</a>
+        </div>
+        <div class="portfolio-item visible">
+          <a href="https://github.com/yourusername/project4" target="_blank">
+            <img src="https://picsum.photos/250/250" alt="Project 4 Image">
+            <h3>Project 4</h3>
+          </a>
+          <p>A brief description of Project 4. This project is focused on...</p>
+          <a href="https://github.com/yourusername/project4" target="_blank" class="github-link">View on GitHub</a>
+        </div>
+        <div class="portfolio-item hidden">
+          <a href="https://github.com/yourusername/project5" target="_blank">
+            <img src="https://picsum.photos/250/250" alt="Project 5 Image">
+            <h3>Project 5</h3>
+          </a>
+          <p>A brief description of Project 5...</p>
+          <a href="https://github.com/yourusername/project5" target="_blank" class="github-link">View on GitHub</a>
+        </div>
+        <div class="portfolio-item hidden">
+          <a href="https://github.com/yourusername/project6" target="_blank">
+            <img src="https://picsum.photos/250/250" alt="Project 6 Image">
+            <h3>Project 6</h3>
+          </a>
+          <p>A brief description of Project 6...</p>
+          <a href="https://github.com/yourusername/project6" target="_blank" class="github-link">View on GitHub</a>
+        </div>
+         <!-- Add more portfolio items here -->
+      </div>
+      <button class="view-more">View More</button>
+    </section>
+    
+    
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="experience-item">
+        <h3>Junior WordPress Developer</h3>
+        <p>Ospba Novat , Ghana - 2022</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      </div>
+      <div class="experience-item">
+        <h3>Python Developer</h3>
+        <p>AutoGrid Systems, Naperville - 2021</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> emmanuelosei831@gmail.com</p>
+        <p><i class="fas fa-phone"></i> (233) 24-911-2552</p>
+        <p><i class="fas fa-map-marker-alt"></i> Accra, Ghana</p>
+      </div>
+      <div class="social-links-footer">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </section>
+    
+  </body>
+</html>
