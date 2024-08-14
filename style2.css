@@ -298,60 +298,27 @@ margin-top: 15%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
 }
 /* Icon Colors */
-.skill-item i.fab.fa-html5 {
-  color: #e34c26;
-}
+.skill-item i.fab.fa-html5 {color: #e34c26;}
 
-.skill-item i.fab.fa-node-js {
-  color: #8cc84b;
-}
+.skill-item i.fab.fa-node-js {color: #8cc84b;}
 
-.skill-item i.fab.fa-wordpress {
-  color: #21759b;
-}
+.skill-item i.fab.fa-wordpress { color: #21759b;}
 
-.skill-item i.fas.fa-database {
-  color: #003d4d;
-}
+.skill-item i.fas.fa-database {color: #003d4d;}
 
-.skill-item i.fab.fa-js {
-  color: #f7df1e;
-}
+.skill-item i.fab.fa-js {color: #f7df1e;}
 
-.skill-item i.fab.fa-git-alt {
-  color: #f1502f;
-}
+.skill-item i.fab.fa-git-alt {color: #f1502f;}
 
-.skill-item i.fas.fa-search {
-  color: #ffffff;
-}
+.skill-item i.fas.fa-search {color: #ffffff;}
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .skills-grid {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 0.5rem;
-  }
 
-  .skill-item {
-    font-size: 1rem;
-    padding: 0.75rem;
-  }
-
-  .skill-item i {
-    font-size: 2rem; /* Slightly smaller icon size on smaller screens */
-  }
 }
 
 @media (max-width: 480px) {
-  .skill-item {
-    font-size: 0.9rem;
-    padding: 0.5rem;
-  }
-
-  .skill-item i {
-    font-size: 1.5rem; /* Even smaller icon size on very small screens */
-  }
+ 
 }
 
 /* End of Skills Section */
@@ -362,13 +329,13 @@ margin-top: 15%;
 #experience,
 #testimonial,
 #contact {
-  padding: 50px 20px;
+  padding: 50px 150px;
 }
 
 #skills .skills-grid,
 #portfolio .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
 }
 
@@ -379,23 +346,8 @@ margin-top: 15%;
   text-align: center;
   border-radius: 10px;
 }
-
-/* Portfolio Section  */
-
-.github-link {
-  display: inline-block;
-  margin-top: 10px;
-  color: var(--secondary-color);
-  text-decoration: none;
-}
-
-.github-link:hover {
-  text-decoration: underline;
-}
-
-/* Basic Styles */
 #portfolio {
-  padding: 20px;
+  /* padding: 20px; */
   margin: 50px auto;
   /* background-color: #f9f9f9; */
 }
@@ -404,12 +356,6 @@ margin-top: 15%;
   text-align: center;
   margin-bottom: 50px;
 }
-
-/* .portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-  } */
 
 .portfolio-item {
   /* background: #fff; */
@@ -468,9 +414,31 @@ margin-top: 15%;
 .view-more:hover {
   background-color: #0056b3;
 }
-
 /* Media Queries for Tablets */
 @media (max-width: 768px) {
+
+  #about,
+  #skills,
+  #portfolio,
+  #experience,
+  #testimonial,
+  #contact {
+    padding: 5rem;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.5rem;
+  }
+
+  .skill-item {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+
+  .skill-item i {
+    font-size: 2rem; /* Slightly smaller icon size on smaller screens */
+  }
   .portfolio-grid {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
@@ -479,6 +447,7 @@ margin-top: 15%;
     font-size: 14px;
   }
 
+
   .github-link,
   .view-more {
     font-size: 14px;
@@ -486,12 +455,31 @@ margin-top: 15%;
   }
 }
 
+
 /* Media Queries for Mobile */
-@media (max-width: 500px) {
-  .portfolio-grid {
-    grid-template-columns: 1fr;
+@media (max-width: 600px) {
+  #about,
+  #skills,
+  #portfolio,
+  #experience,
+  #testimonial,
+  #contact {
+    padding: 2rem;
+  }
+  
+  .skill-item {
+    font-size: 0.9rem;
+    padding: 0.5rem;
   }
 
+  .skill-item i {
+    font-size: 1.5rem; /* Even smaller icon size on very small screens */
+  }
+  .portfolio-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  
   .portfolio-item {
     margin-bottom: 20px;
   }
@@ -506,6 +494,10 @@ margin-top: 15%;
     margin: 20px auto;
   }
 }
+
+
+
+
 .portfolio-item.hidden {
   display: none;
 }
