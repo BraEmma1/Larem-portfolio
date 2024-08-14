@@ -476,7 +476,7 @@ nav {
   }
   
   /* Media Queries for Mobile */
-  @media (max-width: 480px) {
+  @media (max-width: 500px) {
     .portfolio-grid {
       grid-template-columns: 1fr;
     }
