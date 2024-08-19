@@ -72,6 +72,8 @@ nav {
   color: #333; /* You can change the text color if needed */
   border-radius: 4px; /* Optional: add rounded corners */
   padding: 20px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .hero {
