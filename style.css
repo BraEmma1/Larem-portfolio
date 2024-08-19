@@ -1,39 +1,81 @@
-#experience {
-  padding: 20px;
-  background-color: #a5a1a1;
-  border-radius: 8px;
+/* Global styling for consistency */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
-#experience h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  color: #333;
+/* Section styling */
+.about-section {
+  padding: 2rem 1.5rem;
+  background-color: #f9f9f9;
   text-align: center;
 }
 
-.experience-item {
-  background-color: #fff;
-  padding: 15px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+/* Headings */
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #007BFF;
 }
 
-.experience-item h3 {
-  margin-top: 0;
-  font-size: 1.5em;
-  color: #007BFF; /* Or any color you prefer */
+/* About text */
+.about-text {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.location {
-  font-size: 1em;
-  color: #555;
+/* Button styling */
+.read-more {
+  padding: 0.7rem 1.2rem;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
 }
 
-.year {
-  font-weight: bold;
-  color: #333;
-  font-size: 1.2em;
-  margin-left: 5px;
+.read-more:hover {
+  background-color: #0056b3;
 }
+
+/* Hidden text initially hidden */
+.hidden-text {
+  display: none;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 1.5rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.75rem;
+  }
+
+  .about-text,
+  .hidden-text {
+    font-size: 0.95rem;
+  }
+
+  .read-more {
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* JavaScript for read more button */
+<script>
+  document.querySelector('.read-more').addEventListener('click', function() {
+    const hiddenText = document.querySelector('.hidden-text');
+    hiddenText.style.display = hiddenText.style.display === 'none' || hiddenText.style.display === '' ? 'block' : 'none';
+    this.textContent = hiddenText.style.display === 'block' ? 'Read Less' : 'Read More';
+  });
+</script>

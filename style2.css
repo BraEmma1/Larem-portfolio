@@ -1,4 +1,11 @@
 /* CSS Variables */
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Styling */
 :root {
   --primary-color: #17223c;
   --secondary-color: #eb5624;
@@ -50,13 +57,22 @@ nav {
 
 .nav-links li {
   margin-left: 20px;
+  margin-bottom: 10px;
 }
 
 .nav-links a {
-  color: white;
+  color: var(--secondary-color);
   text-decoration: none;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
 }
 
+.nav-links a:hover {
+  background-color: white; /* Background changes to white on hover */
+  color: #333; /* You can change the text color if needed */
+  border-radius: 4px; /* Optional: add rounded corners */
+  padding: 20px;
+}
 
 .hero {
 margin-left: 15%;
@@ -193,6 +209,11 @@ margin-top: 15%;
   padding: 50px 20px;
   max-width: 1200px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 #about h2 {
@@ -207,6 +228,15 @@ margin-top: 15%;
   text-align: justify;
 }
 
+.read-more{
+  color: white;
+  background-color: var(--secondary-color);
+  border: none;
+  padding: 10px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
 @media (max-width: 768px) {
   #about {
     padding: 30px 15px;
@@ -218,6 +248,7 @@ margin-top: 15%;
 
   #about p {
     font-size: 0.95rem;
+    text-align: justify;
   }
 }
 
@@ -232,7 +263,7 @@ margin-top: 15%;
 
   #about p {
     font-size: 0.9rem;
-    text-align: left;
+    text-align: justify;
   }
 }
 
@@ -505,6 +536,13 @@ margin-top: 15%;
     padding: 5rem;
   }
   
+  .about-text {
+    display: block; /* Ensure the first paragraph is visible */
+  }
+  .hidden-text {
+    display: none; /* Hide the rest of the text initially */
+  }
+  
   .skills-grid {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 0.5rem;
@@ -599,3 +637,9 @@ margin-top: 15%;
 
 
 
+
+@media (min-width: 768px) { /* Target desktop view */
+  .read-more {
+    display: none; /* Hide the button on desktop */
+  }
+}
